@@ -1,0 +1,148 @@
+html  {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: url(/assets/img/vuesax-login-bg.eb4e894d.jpg) no-repeat 50%;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.45;
+
+}
+
+
+
+
+.container{
+    width: 100%;
+    font-family: montserrat,Helvetica,Arial,serif;
+    
+    &-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-card{
+            display: flex;
+            width: 70%;
+            height: 90%;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
+            &-left{
+                
+                overflow: hidden;
+                text-align: center;
+                padding: 0px;
+                flex: 1;
+                img{
+                    height: 281px;
+                    width: 100%;
+
+                }
+                box-sizing: border-box;
+              
+            }
+
+            &-right{
+                
+                height: 100%;
+                margin-left: 20px;
+                margin-bottom: 35px;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                flex: 1.1;
+                box-sizing: border-box;
+                & h4{
+                    font-size: 1.32rem;
+                }
+                & input{
+                    
+                    border: none;
+                    margin-left: 10px;
+                }
+
+                p{
+                    width: 90%;
+                    line-height: 1.5rem;
+                    color: #626262;
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 600px){
+        .container-main-card-left {
+            display: none;
+        }
+    }
+
+   .email  {
+        align-items: center;
+        color: #626262;
+        width: 80%;
+   }
+    .pass{
+        align-items: center;
+        color: #626262;
+        width: 80%;
+    }
+
+    .login{
+        margin-top: 20px;
+        flex-direction: row-reverse;
+        & button{
+            background-color: #7367f0;
+            border: #7367f0;
+        }
+    }
+
+    .flex{
+        width: 80%;
+        display: flex;
+    }
+
+    
+    
+
+    
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .formLogin{
+//     max-width: 900px;
+//     margin:  0 auto;
+//     height: 250px;
+//     margin-top: 200px;
+//     background-color: white;
+//     image{
+//         width: 100%;
+        
+//     }
+
